@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A096638320E6BEF700CA9899 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096638220E6BEF700CA9899 /* SwipingController.swift */; };
+		A096638520E6C1A400CA9899 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096638420E6C1A400CA9899 /* PageCell.swift */; };
 		A0997D7E20E564BA00E93054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0997D7D20E564BA00E93054 /* AppDelegate.swift */; };
 		A0997D8020E564BA00E93054 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0997D7F20E564BA00E93054 /* ViewController.swift */; };
 		A0997D8320E564BA00E93054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0997D8120E564BA00E93054 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A096638220E6BEF700CA9899 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		A096638420E6C1A400CA9899 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		A0997D7A20E564BA00E93054 /* Auto Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0997D7D20E564BA00E93054 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0997D7F20E564BA00E93054 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				A0997D7D20E564BA00E93054 /* AppDelegate.swift */,
 				A0997D7F20E564BA00E93054 /* ViewController.swift */,
+				A096638220E6BEF700CA9899 /* SwipingController.swift */,
+				A096638420E6C1A400CA9899 /* PageCell.swift */,
 				A0997D8120E564BA00E93054 /* Main.storyboard */,
 				A0997D8420E564BB00E93054 /* Assets.xcassets */,
 				A0997D8620E564BB00E93054 /* LaunchScreen.storyboard */,
@@ -137,6 +143,8 @@
 			files = (
 				A0997D8020E564BA00E93054 /* ViewController.swift in Sources */,
 				A0997D7E20E564BA00E93054 /* AppDelegate.swift in Sources */,
+				A096638520E6C1A400CA9899 /* PageCell.swift in Sources */,
+				A096638320E6BEF700CA9899 /* SwipingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

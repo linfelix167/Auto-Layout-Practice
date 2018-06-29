@@ -34,12 +34,56 @@ class ViewController: UIViewController {
     textView.isScrollEnabled = false
     return textView
   }()
+  
+  private let previousButton: UIButton = {
+    let button = UIButton(type: .system)
+    button.setTitle("PREV", for: .normal)
+    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+    button.setTitleColor(.gray, for: .normal)
+    button.translatesAutoresizingMaskIntoConstraints = false
+    return button
+  }()
+  
+  private let nextButton: UIButton = {
+    let button = UIButton(type: .system)
+    button.setTitle("Next", for: .normal)
+    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+    button.setTitleColor(.mainPink, for: .normal)
+    button.translatesAutoresizingMaskIntoConstraints = false
+    return button
+  }()
+  
+  private let pageControl: UIPageControl = {
+    let pc = UIPageControl()
+    pc.currentPage = 0
+    pc.numberOfPages = 4
+    pc.currentPageIndicatorTintColor = .mainPink
+    pc.pageIndicatorTintColor = UIColor(displayP3Red: 249/255, green: 207/255, blue: 224/255, alpha: 1)
+    return pc
+  }()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
     view.addSubview(descriptionTextView)
+    
+    setupButtonControls()
     setuoLayout()
+  }
+  
+  fileprivate func setupButtonControls() {
+    
+    let buttonControllsStackView = UIStackView(arrangedSubviews: [previousButton, pageControl, nextButton])
+    buttonControllsStackView.translatesAutoresizingMaskIntoConstraints = false
+    buttonControllsStackView.distribution = .fillEqually
+    view.addSubview(buttonControllsStackView)
+    
+    NSLayoutConstraint.activate([
+      buttonControllsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+      buttonControllsStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+      buttonControllsStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+      buttonControllsStackView.heightAnchor.constraint(equalToConstant: 50)
+      ])
   }
   
   func setuoLayout() {
@@ -65,5 +109,9 @@ class ViewController: UIViewController {
     descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
     descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
   }
+}
+
+extension UIColor {
+  static var mainPink = UIColor(displayP3Red: 232/255, green: 68/255, blue: 133/255, alpha: 1)
 }
 
