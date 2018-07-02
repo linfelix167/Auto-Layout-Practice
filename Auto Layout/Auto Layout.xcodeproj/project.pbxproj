@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A016B9DF20EA87C0000C79B7 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016B9DE20EA87C0000C79B7 /* Page.swift */; };
 		A096638320E6BEF700CA9899 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096638220E6BEF700CA9899 /* SwipingController.swift */; };
 		A096638520E6C1A400CA9899 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096638420E6C1A400CA9899 /* PageCell.swift */; };
 		A0997D7E20E564BA00E93054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0997D7D20E564BA00E93054 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A016B9DE20EA87C0000C79B7 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		A096638220E6BEF700CA9899 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		A096638420E6C1A400CA9899 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		A0997D7A20E564BA00E93054 /* Auto Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A016B9E020EA88E9000C79B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A016B9DE20EA87C0000C79B7 /* Page.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A016B9E120EA88F3000C79B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0997D7F20E564BA00E93054 /* ViewController.swift */,
+				A096638220E6BEF700CA9899 /* SwipingController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A016B9E220EA8903000C79B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A096638420E6C1A400CA9899 /* PageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A0997D7120E564BA00E93054 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +85,10 @@
 		A0997D7C20E564BA00E93054 /* Auto Layout */ = {
 			isa = PBXGroup;
 			children = (
+				A016B9E220EA8903000C79B7 /* View */,
+				A016B9E120EA88F3000C79B7 /* Controller */,
+				A016B9E020EA88E9000C79B7 /* Model */,
 				A0997D7D20E564BA00E93054 /* AppDelegate.swift */,
-				A0997D7F20E564BA00E93054 /* ViewController.swift */,
-				A096638220E6BEF700CA9899 /* SwipingController.swift */,
-				A096638420E6C1A400CA9899 /* PageCell.swift */,
 				A0997D8120E564BA00E93054 /* Main.storyboard */,
 				A0997D8420E564BB00E93054 /* Assets.xcassets */,
 				A0997D8620E564BB00E93054 /* LaunchScreen.storyboard */,
@@ -145,6 +172,7 @@
 				A0997D7E20E564BA00E93054 /* AppDelegate.swift in Sources */,
 				A096638520E6C1A400CA9899 /* PageCell.swift in Sources */,
 				A096638320E6BEF700CA9899 /* SwipingController.swift in Sources */,
+				A016B9DF20EA87C0000C79B7 /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

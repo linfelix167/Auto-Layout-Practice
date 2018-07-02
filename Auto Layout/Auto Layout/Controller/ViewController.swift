@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     textView.textAlignment = .center
     textView.isEditable = false
     textView.isScrollEnabled = false
+    
     return textView
   }()
   
