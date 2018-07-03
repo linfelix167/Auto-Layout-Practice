@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A016B9DF20EA87C0000C79B7 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016B9DE20EA87C0000C79B7 /* Page.swift */; };
+		A057F7E520EBDC4C0002F04A /* SwipingController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057F7E420EBDC4C0002F04A /* SwipingController+extension.swift */; };
+		A057F7E720EBDCCE0002F04A /* SwipingController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057F7E620EBDCCE0002F04A /* SwipingController+UICollectionView.swift */; };
 		A096638320E6BEF700CA9899 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096638220E6BEF700CA9899 /* SwipingController.swift */; };
 		A096638520E6C1A400CA9899 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096638420E6C1A400CA9899 /* PageCell.swift */; };
 		A0997D7E20E564BA00E93054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0997D7D20E564BA00E93054 /* AppDelegate.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		A016B9DE20EA87C0000C79B7 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		A057F7E420EBDC4C0002F04A /* SwipingController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipingController+extension.swift"; sourceTree = "<group>"; };
+		A057F7E620EBDCCE0002F04A /* SwipingController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipingController+UICollectionView.swift"; sourceTree = "<group>"; };
 		A096638220E6BEF700CA9899 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		A096638420E6C1A400CA9899 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		A0997D7A20E564BA00E93054 /* Auto Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +58,8 @@
 			children = (
 				A0997D7F20E564BA00E93054 /* ViewController.swift */,
 				A096638220E6BEF700CA9899 /* SwipingController.swift */,
+				A057F7E420EBDC4C0002F04A /* SwipingController+extension.swift */,
+				A057F7E620EBDCCE0002F04A /* SwipingController+UICollectionView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,8 +177,10 @@
 				A0997D8020E564BA00E93054 /* ViewController.swift in Sources */,
 				A0997D7E20E564BA00E93054 /* AppDelegate.swift in Sources */,
 				A096638520E6C1A400CA9899 /* PageCell.swift in Sources */,
+				A057F7E720EBDCCE0002F04A /* SwipingController+UICollectionView.swift in Sources */,
 				A096638320E6BEF700CA9899 /* SwipingController.swift in Sources */,
 				A016B9DF20EA87C0000C79B7 /* Page.swift in Sources */,
+				A057F7E520EBDC4C0002F04A /* SwipingController+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
